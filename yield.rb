@@ -1,5 +1,5 @@
-def donky_talk(name)
-  return "#{yield(name)}
+def cow_say(message)
+  return "#{yield(message)}
             \\   ^__^
              \\  (oo)\\_______
                 (__)\\       )\\/\\
@@ -7,9 +7,8 @@ def donky_talk(name)
                     ||     ||"
 end
 
-donky = donky_talk('Patrick') do |name|
-  message = "Hello my friend #{name}"
-  "  #{'~' * message.size}\n< #{message} >\n  #{'~' * message.size}"
+cow = cow_say("I'm a big cow") do |text|
+  "~~~ #{text.upcase} ~~~"
 end
 
-puts donky
+puts cow
