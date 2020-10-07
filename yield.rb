@@ -7,8 +7,10 @@ def cow_say(message)
                     ||     ||"
 end
 
-cow = cow_say("I'm a big cow") do |text|
-  "~~~ #{text.upcase} ~~~"
+# some stuffs
+
+cow = cow_say("Good evening Aki!") do |text|
+  "~^~ #{text.upcase} ~^~"
 end
 
 puts cow
