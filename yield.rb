@@ -9,7 +9,7 @@ end
 
 # some stuffs
 
-cow = cow_say("Good evening Aki!") do |text|
+cow = cow_say("Wanna yield with me Sylvain?") do |text|
   "~^~ #{text.upcase} ~^~"
 end
 
